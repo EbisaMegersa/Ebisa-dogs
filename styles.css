@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.verification-step {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.step-text {
+    width: 180px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.progress-container {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #e0e0e0;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #4AA8FF;
+    width: 0;
+    border-radius: 10px;
+    transition: width 2s ease;
+}
+
+.checkmark {
+    font-size: 18px;
+    color: #4AA8FF;
+    display: none; /* Initially hidden */
+    margin-left: 5px;
+}
+#goobtn{
+  background-color: #4AA8FF;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  width: 99%;
+  height: 30px;
+  border-radius: 10px;
+  border-style: none;
+  animation-name: dog;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+  transition: 0.1s
+}
+#goobtn:hover{
+  transform: scale(1.1);
+}
+@keyframes dog{
+  0%{
+    opacity: 0%;
+  }
+  95%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
